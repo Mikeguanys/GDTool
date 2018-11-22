@@ -1,0 +1,7 @@
+D:\MyProject\Other192\GDTool\MyDataBase\BLL\bin\Debug\BLL.dll
+D:\MyProject\Other192\GDTool\MyDataBase\BLL\bin\Debug\BLL.pdb
+D:\MyProject\Other192\GDTool\MyDataBase\BLL\bin\Debug\DAL.dll
+D:\MyProject\Other192\GDTool\MyDataBase\BLL\bin\Debug\DAL.pdb
+D:\MyProject\Other192\GDTool\MyDataBase\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\MyProject\Other192\GDTool\MyDataBase\BLL\obj\Debug\BLL.dll
+D:\MyProject\Other192\GDTool\MyDataBase\BLL\obj\Debug\BLL.pdb

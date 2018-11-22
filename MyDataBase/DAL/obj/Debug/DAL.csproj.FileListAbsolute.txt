@@ -1,0 +1,5 @@
+D:\MyProject\Other192\GDTool\MyDataBase\DAL\bin\Debug\DAL.dll
+D:\MyProject\Other192\GDTool\MyDataBase\DAL\bin\Debug\DAL.pdb
+D:\MyProject\Other192\GDTool\MyDataBase\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\MyProject\Other192\GDTool\MyDataBase\DAL\obj\Debug\DAL.dll
+D:\MyProject\Other192\GDTool\MyDataBase\DAL\obj\Debug\DAL.pdb

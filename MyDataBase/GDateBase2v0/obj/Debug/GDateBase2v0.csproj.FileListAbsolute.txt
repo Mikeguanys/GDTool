@@ -1,0 +1,5 @@
+D:\MyProject\Other192\GDTool\MyDataBase\GDateBase2v0\bin\Debug\GDateBase2v0.dll
+D:\MyProject\Other192\GDTool\MyDataBase\GDateBase2v0\bin\Debug\GDateBase2v0.pdb
+D:\MyProject\Other192\GDTool\MyDataBase\GDateBase2v0\obj\Debug\GDateBase2v0.csprojResolveAssemblyReference.cache
+D:\MyProject\Other192\GDTool\MyDataBase\GDateBase2v0\obj\Debug\GDateBase2v0.dll
+D:\MyProject\Other192\GDTool\MyDataBase\GDateBase2v0\obj\Debug\GDateBase2v0.pdb

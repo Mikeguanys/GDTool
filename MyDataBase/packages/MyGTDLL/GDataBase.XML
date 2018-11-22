@@ -1,0 +1,2401 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GDataBase</name>
+    </assembly>
+    <members>
+        <member name="F:GDataBase.GTEnum.ImagePosition.LeftTop">
+            <summary>
+            左上
+            </summary>
+        </member>
+        <member name="F:GDataBase.GTEnum.ImagePosition.LeftBottom">
+            <summary>
+            左下
+            </summary>
+        </member>
+        <member name="F:GDataBase.GTEnum.ImagePosition.RightTop">
+            <summary>
+            右上
+            </summary>
+        </member>
+        <member name="F:GDataBase.GTEnum.ImagePosition.RigthBottom">
+            <summary>
+            右下
+            </summary>
+        </member>
+        <member name="F:GDataBase.GTEnum.ImagePosition.TopMiddle">
+            <summary>
+            顶部居中
+            </summary>
+        </member>
+        <member name="F:GDataBase.GTEnum.ImagePosition.BottomMiddle">
+            <summary>
+            底部居中
+            </summary>
+        </member>
+        <member name="F:GDataBase.GTEnum.ImagePosition.Center">
+            <summary>
+            中心
+            </summary>
+        </member>
+        <member name="M:GDataBase.IDataBase.GetAddGetId(System.String,System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            添加并返回Id
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.IDataBase.GetAddGetId(System.String,System.String,System.String)">
+            <summary>
+            添加并返回Id
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.IDataBase.Add(System.String,System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            添加
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.IDataBase.Add(System.String,System.String,System.String)">
+            <summary>
+            添加
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.IDataBase.MoreAdd(System.String,System.Collections.Generic.List{System.String},System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            添加多条
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.IDataBase.MoreAdd(System.String,System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            添加多条
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.IDataBase.Update(System.String,System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            更新
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.IDataBase.Update(System.String,System.String,System.String)">
+            <summary>
+            更新
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.IDataBase.Delete(System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            删除
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.IDataBase.Delete(System.String,System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.IDataBase.GetSingle(System.String,System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            返回一个值
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.IDataBase.GetSingle(System.String,System.String,System.String)">
+            <summary>
+            返回一个值
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.IDataBase.Exists(System.String,System.String)">
+            <summary>
+            数据是否存在
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.IDataBase.Exists(System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            数据是否存在
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.IDataBase.PagingList(System.Data.DataTable@,System.Int32@,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取分页列表
+            </summary>
+            <param name="DataSour">返回数据源</param>
+            <param name="RowCount">返回总页数</param>
+            <param name="ThisPage">当前第几页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="Condition">条件</param>
+        </member>
+        <member name="M:GDataBase.IDataBase.ThisPagingList(System.Data.DataTable@,System.Int32@,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取分页列表单表或者临时表的形式
+            </summary>
+            <param name="DataSour">返回数据源</param>
+            <param name="RowCount">返回总页数</param>
+            <param name="ThisPage">当前第几页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="Condition">条件</param>
+        </member>
+        <member name="M:GDataBase.IDataBase.GetTable(System.String,System.String)">
+            <summary>
+            获取DataTable
+            </summary>
+            <param name="safeSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.IDataBase.GetTable(System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            获取DataTable
+            </summary>
+            <param name="safeSql"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.IDataBase.GetDataSet(System.String,System.String)">
+            <summary>
+            获取DataSet
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>  
+        </member>
+        <member name="M:GDataBase.IDataBase.GetDataSet(System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            获取DataSet
+            </summary>
+            <param name="sql"></param>
+            <param name="values"></param>
+            <returns></returns>  
+        </member>
+        <member name="M:GDataBase.ImageUtility.MergeQrImg(System.Drawing.Bitmap,System.Drawing.Bitmap,System.Double)">
+            <summary>
+            合并用户QR图片和用户头像
+            </summary>
+            <param name="qrImg">QR图片</param>
+            <param name="headerImg">用户头像</param>
+            <param name="n"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.ImageUtility.CreateRoundedRectanglePath(System.Drawing.Rectangle,System.Int32)">
+            <summary>
+            创建圆角矩形
+            </summary>
+            <param name="rect">区域</param>
+            <param name="cornerRadius">圆角角度</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.ImageUtility.ZoomPic(System.Drawing.Image,System.Double)">
+            <summary>
+            图片按比例缩放
+            </summary>
+        </member>
+        <member name="M:GDataBase.ImageUtility.GetThumbnail(System.Drawing.Bitmap,System.Int32,System.Int32)">
+            <summary>
+            创建缩略图
+            </summary>
+            <param name="b"></param>
+            <param name="destHeight"></param>
+            <param name="destWidth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.ISQLiteBase.GetAddGetId(System.String,System.String,System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            添加并返回Id
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.ISQLiteBase.GetAddGetId(System.String,System.String,System.String)">
+            <summary>
+            添加并返回Id
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.ISQLiteBase.Add(System.String,System.String,System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            添加
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.ISQLiteBase.Add(System.String,System.String,System.String)">
+            <summary>
+            添加
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.ISQLiteBase.MoreAdd(System.String,System.Collections.Generic.List{System.String},System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            添加多条
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.ISQLiteBase.MoreAdd(System.String,System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            添加多条
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.ISQLiteBase.Update(System.String,System.String,System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            更新
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.ISQLiteBase.Update(System.String,System.String,System.String)">
+            <summary>
+            更新
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.ISQLiteBase.Delete(System.String,System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            删除
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.ISQLiteBase.Delete(System.String,System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.ISQLiteBase.GetSingle(System.String,System.String,System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            返回一个值
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.ISQLiteBase.GetSingle(System.String,System.String,System.String)">
+            <summary>
+            返回一个值
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.ISQLiteBase.Exists(System.String,System.String)">
+            <summary>
+            数据是否存在
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.ISQLiteBase.Exists(System.String,System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            数据是否存在
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.ISQLiteBase.PagingList(System.Data.DataTable@,System.Int32@,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取分页列表
+            </summary>
+            <param name="DataSour">返回数据源</param>
+            <param name="RowCount">返回总页数</param>
+            <param name="ThisPage">当前第几页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="Condition">条件</param>
+        </member>
+        <member name="M:GDataBase.ISQLiteBase.ThisPagingList(System.Data.DataTable@,System.Int32@,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取分页列表单表或者临时表的形式
+            </summary>
+            <param name="DataSour">返回数据源</param>
+            <param name="RowCount">返回总页数</param>
+            <param name="ThisPage">当前第几页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="Condition">条件</param>
+        </member>
+        <member name="M:GDataBase.ISQLiteBase.GetTable(System.String,System.String)">
+            <summary>
+            获取DataTable
+            </summary>
+            <param name="safeSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.ISQLiteBase.GetTable(System.String,System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            获取DataTable
+            </summary>
+            <param name="safeSql"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.ISQLiteBase.GetDataSet(System.String,System.String)">
+            <summary>
+            获取DataSet
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>  
+        </member>
+        <member name="M:GDataBase.ISQLiteBase.GetDataSet(System.String,System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            获取DataSet
+            </summary>
+            <param name="sql"></param>
+            <param name="values"></param>
+            <returns></returns>  
+        </member>
+        <member name="M:GDataBase.MyDataBS.#ctor">
+            <summary>
+            方法重构
+            </summary>
+            <param name="connstring"></param>
+        </member>
+        <member name="M:GDataBase.MyDataBS.#ctor(System.String)">
+            <summary>
+            方法重构
+            </summary>
+            <param name="connstring"></param>
+        </member>
+        <member name="M:GDataBase.MyDataBS.RedisDB">
+            <summary>
+            RedisNoSql连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyDataBS.BsExecute(System.String)">
+            <summary>
+            (无参）返回执行的行数(删除修改更新) 
+            </summary>
+            <param name="safeSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyDataBS.BsExecute(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            （有参)
+            </summary>
+            <param name="sql"></param>
+            <param name="values"></param>
+            <returns></returns>  
+        </member>
+        <member name="M:GDataBase.MyDataBS.MoreBsExecute(System.String)">
+            <summary>
+            事物执行多条SQL
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyDataBS.MoreBsExecute(System.String,System.Int32,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            事物执行多条SQL
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyDataBS.GetBsScalar(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            （有参）  
+            </summary>
+            <param name="sql"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyDataBS.GetBsDataTable(System.String)">
+            <summary>
+            返回一个DataTable 
+            </summary>
+            <param name="safeSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyDataBS.GetBsDataTable(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            返回一个DataTable 
+            </summary>
+            <param name="safeSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyDataBS.GetBsDataSet(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            返回DataSet
+            </summary>
+            <param name="sql"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyDataBS.GetBsDataSet(System.String)">
+            <summary>
+            返回DataSet
+            </summary>
+            <param name="sql"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyDataBS.ExecuteStorage(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            执行存储方法返回一个表
+            </summary>
+            <param name="storedName"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyDataBS.MoreExecuteStorage(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            执行存储方法返回多个表
+            </summary>
+            <param name="storedName"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyDataBS.StringExecuteStorage(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            返回一个值
+            </summary>
+            <param name="storedName"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GDataBase.MySQLBS">
+            <summary>
+            MySQL抽象类型
+            </summary>
+        </member>
+        <member name="M:GDataBase.MySQLBS.#ctor">
+             <summary>
+             方法重构
+             </summary>
+            
+        </member>
+        <member name="M:GDataBase.MySQLBS.#ctor(System.String)">
+            <summary>
+            方法重构
+            </summary>
+            <param name="connstring"></param>
+        </member>
+        <member name="M:GDataBase.MySQLBS.BsExecute(System.String)">
+            <summary>
+            直接执行SQL语句
+            </summary>
+            <param name="safeSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLBS.BsExecute(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            直接执行SQL语句
+            </summary>
+            <param name="sql"></param>
+            <param name="values"></param>
+            <returns></returns>  
+        </member>
+        <member name="M:GDataBase.MySQLBS.BsMoreExecute(System.String,System.Int32)">
+            <summary>
+            事物执行多条SQL
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="RustltCount">返回的结果数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLBS.BsMoreExecute(System.String,System.Int32,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            事物执行多条SQL
+            </summary>
+            <param name="sql"></param>
+            <param name="RustltCount"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLBS.BsGetScalar(System.String)">
+            <summary>
+            返回第一行第一列
+            </summary>
+            <param name="safeSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLBS.BsGetScalar(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            返回第一行第一列
+            </summary>
+            <param name="sql"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLBS.BsGetDataReader(System.String)">
+            <summary>
+            返回一行数据
+            </summary>
+            <param name="safeSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLBS.BsGetDataReader(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            返回一行数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="values">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLBS.BsGetDataTable(System.String)">
+            <summary>
+            返回一个DataTable 
+            </summary>
+            <param name="safeSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLBS.BsGetDataTable(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            返回一个DataTable 
+            </summary>
+            <param name="safeSql"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLBS.BsGetDataSet(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            返回DataSet
+            </summary>
+            <param name="sql"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLBS.BsGetDataSet(System.String)">
+            <summary>
+            返回DataSet
+            </summary>
+            <param name="sql"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLBS.BsAddGetId(System.String)">
+            <summary>
+            新增一条记录返回Id
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLBS.BsAddGetId(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            新增一条记录返回Id
+            </summary>
+            <param name="sql"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLBS.ExecuteStorage(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            执行存储方法返回一个表
+            </summary>
+            <param name="storedName"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLBS.MoreExecuteStorage(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            执行存储方法返回多个表
+            </summary>
+            <param name="storedName"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLBS.StringExecuteStorage(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            返回一个值
+            </summary>
+            <param name="storedName"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GDataBase.MySQLDBHeper">
+            <summary>
+            MySQL 数据库操作底层
+            </summary>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.#ctor">
+            <summary>
+            方法重构
+            </summary>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.#ctor(System.String)">
+            <summary>
+            方法重构，连接名字
+            </summary>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.GetAddGetId(System.String,System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            新增一条记录返回Id
+            </summary>
+            <param name="filename">字段名</param>
+            <param name="valuestr">值</param>
+            <param name="tablename">表名</param>
+            <param name="cmdParms">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.GetAddGetId(System.String,System.String,System.String)">
+            <summary>
+            新增一条记录返回Id
+            </summary>
+            <param name="filename">字段名</param>
+            <param name="valuestr">值</param>
+            <param name="tablename">表名</param>        
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.Add(System.String,System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            插入一条记录
+            </summary>
+            <param name="filename">字段名</param>
+            <param name="valuestr">值</param>
+            <param name="tablename">表</param>
+            <param name="cmdParms">参数</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.Add(System.String,System.String,System.String)">
+            <summary>
+            插入一条记录
+            </summary>
+            <param name="filename">字段名</param>
+            <param name="valuestr">值</param>
+            <param name="tablename">表</param>
+            <param name="cmdParms">参数</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.MoreAdd(System.String,System.Collections.Generic.List{System.String},System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            插入多条数据
+            </summary>
+            <param name="filename">字段名</param>
+            <param name="valuestr">值的集合(),(),()</param>
+            <param name="tablename">表名</param>
+            <param name="cmdParms">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.MoreAdd(System.String,System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            插入多条数据
+            </summary>
+            <param name="filename">字段名</param>
+            <param name="valuestr">值的集合(),(),()</param>
+            <param name="tablename">表名</param>        
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.MoreAdd(System.String,System.String[],System.String)">
+            <summary>
+            插入多条数据
+            </summary>
+            <param name="filename">字段名</param>
+            <param name="valuestr">值的集合(),(),()</param>
+            <param name="tablename">表名</param>        
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.MoreAdd(System.String,System.String,System.String)">
+            <summary>
+            插入多条数据
+            </summary>
+            <param name="filename">字段名</param>
+            <param name="valuestr">值的集合(),(),()</param>
+            <param name="tablename">表名</param>        
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.Update(System.String,System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            更新数据
+            </summary>
+            <param name="setcondition">更新的字段</param>
+            <param name="condition">条件</param>
+            <param name="tablename">表名</param>
+            <param name="cmdParms">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.Update(System.String,System.String,System.String)">
+            <summary>
+            更新数据
+            </summary>
+            <param name="setcondition">更新的字段</param>
+            <param name="condition">条件</param>
+            <param name="tablename">表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.Delete(System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            删除数据
+            </summary>
+            <param name="condition">条件</param>
+            <param name="tablename">表名</param>
+            <param name="cmdParms">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.Delete(System.String,System.String)">
+            <summary>
+            删除数据
+            </summary>
+            <param name="condition">条件</param>
+            <param name="tablename">表名</param>        
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.GetSingle(System.String,System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            返回第一行第一列
+            </summary>
+            <param name="GetColoum">返回的字段</param>
+            <param name="condition">条件</param>
+            <param name="tablename">表名</param>
+            <param name="cmdParms">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.GetSingle(System.String,System.String,System.String)">
+            <summary>
+            返回第一行第一列
+            </summary>
+            <param name="GetColoum">返回的字段</param>
+            <param name="condition">条件</param>
+            <param name="tablename">表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.Exists(System.String,System.String)">
+            <summary>
+            查询是否存在
+            </summary>
+            <param name="contion">条件</param>
+            <param name="tablename">表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.Exists(System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            查询是否存在
+            </summary>
+            <param name="contion">条件</param>
+            <param name="tablename">表名</param>
+            <param name="cmdParms">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.GetTable(System.String,System.String)">
+            <summary>
+            获取一个表
+            </summary>
+            <param name="contion">条件</param>
+            <param name="tablename">表名字</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.GetTable(System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            获取一个表
+            </summary>
+            <param name="contion">条件</param>
+            <param name="tablename">表名字</param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.GetDataSet(System.String,System.String)">
+            <summary>
+            获取多个表
+            </summary>
+            <param name="contion">条件</param>
+            <param name="tablename">表名字</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.GetDataSet(System.String,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            获取多个表
+            </summary>
+            <param name="contion">条件</param>
+            <param name="tablename">表名字</param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.PagingList(System.Data.DataTable@,System.Int32@,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取分页列表
+            </summary>
+            <param name="DataSour">返回数据源</param>
+            <param name="RowCount">总数据量</param>
+            <param name="ThisPage">当前页</param>
+            <param name="PageSize">一页多少条数据</param>
+            <param name="sql1">数据源SQL</param>
+            <param name="sql2">总数据量SQL</param>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.ThisPagingList(System.Data.DataTable@,System.Int32@,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取分页列表
+            </summary>
+            <param name="DataSour">返回数据源</param>
+            <param name="RowCount">总数据量</param>
+            <param name="ThisPage">当前页</param>
+            <param name="PageSize">一页多少条数据</param>
+            <param name="Condition">条件</param>
+            <param name="tablename">表名</param>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.GetPagingData(System.Data.DataTable@,System.Int32@,System.String,System.Int32,System.String,System.Int32,System.String,System.String)">
+            <summary> 
+            获取分页数据(存储过程)
+            </summary>
+            <param name="dt">返回来的分页数据</param>
+            <param name="RowCount">返回来的行数</param>
+            <param name="ProcName">当前的页码数</param>
+            <param name="ThisPage">一页多少条数据</param>
+            <param name="TableName">表名</param>
+            <param name="PageSize">分页大小</param>
+            <param name="Condition">查询条件</param>
+            <param name="Sorting">排序</param>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.RecordLog(System.String,System.String,System.String)">
+            <summary>
+            记录操作日志
+            </summary>
+            <param name="ActEr">操作人</param>
+            <param name="Act">操作动作</param>
+            <param name="Log">日志内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.GTSearch``1(System.String)">
+            <summary>
+            泛型约束查询
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="sql">sql语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.GTSearch``1(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            泛型约束查询
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.GTSearchList``1(System.String)">
+            <summary>
+            泛型函数集合
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.GTSearchList``1(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            查询泛型集合
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="sql">sql语句</param>
+            <param name="par">集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLDBHeper.ToModel``1(System.Data.DataRow)">
+            <summary>
+            转化成Model
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="row"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GDataBase.MyGT">
+            <summary>
+            GT工具库
+            </summary>
+        </member>
+        <member name="M:GDataBase.MyGT.WriteFile(System.String)">
+            <summary>
+            写入文本/默认路径在本项目bin目录下面
+            </summary>
+            <param name="txt"></param>
+        </member>
+        <member name="M:GDataBase.MyGT.WriteFile(System.String,System.String)">
+            <summary>
+            记录写入
+            </summary>
+            <param name="txt">写入内容</param>
+            <param name="path">路径（E:\）</param>
+        </member>
+        <member name="M:GDataBase.MyGT.WriteFile(System.String,System.String,System.String)">
+            <summary>
+            记录写入
+            </summary>
+            <param name="txt">写入内容</param>
+            <param name="path">文件路径</param>
+            <param name="filename">文件名</param>
+        </member>
+        <member name="M:GDataBase.MyGT.WriteAnyFile(System.String,System.String,System.String)">
+            <summary>
+            后缀自定义
+            </summary>
+            <param name="txt">写入内容</param>
+            <param name="path">文件路径</param>
+            <param name="filename">文件名</param>
+        </member>
+        <member name="M:GDataBase.MyGT.WebRequestPost(System.String,System.String)">
+            <summary>
+            将数据Post到接口里
+            </summary>
+            <param name="url">一般是带https方式</param>
+            <param name="data">要post的数据，转化为utf-8格式。如果没有数据则为空</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyGT.WebRequestPost(System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate)">
+            <summary>
+            将数据Post到接口里带证书的
+            </summary>
+            <param name="url">一般是带https方式</param>
+            <param name="data">要post的数据，转化为utf-8格式。如果没有数据则为空</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyGT.GetJsonPostData(System.String)">
+            <summary>
+            获取接口数据
+            </summary>
+            <param name="url">接口</param>
+            <param name="Type">返回的是json，还是xml</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyGT.DataTableToJsoin(System.Data.DataTable)">
+            <summary>
+            将DataTable转化成Json格式 
+            </summary>
+            <param name="dt">DataTable 数据源</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyGT.JsonToDictionary(System.String,System.String)">
+            <summary>
+            后台Json获取某个Json的值（只支持一层Json{a:1,b:2,c:3}）
+            </summary>
+            <param name="jsonData">json数据源</param>
+            <param name="columName">json的字段</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyGT.XmlToJson(System.Xml.XmlDocument)">
+            <summary>
+            Xml 转化成Json
+            </summary>
+            <param name="xml"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyGT.JsonToXml(System.String)">
+            <summary>
+            Json转化成Xml
+            </summary>
+            <param name="Jsondata"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyGT.JsonToObject(System.String,System.Object)">
+            <summary>
+            Json转换成对象
+            </summary>
+            <param name="jsondata"></param>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyGT.ObjectToJson(System.Object)">
+            <summary>
+            对象转化成Json
+            </summary>        
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyGT.XMLSerialize``1(``0)">
+            <summary>
+            对象转化成XML
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyGT.DeXMLSerialize``1(System.String)">
+            <summary>
+            String Xml转化成Object
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="xmlString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyGT.ToMD5_16(System.String)">
+            <summary>
+            MD5 16位加密
+            </summary>
+            <param name="Str">加密的参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyGT.ToMD5_32(System.String)">
+            <summary>
+            MD5 32位加密小写
+            </summary>
+            <param name="Str">加密的参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyGT.ToMD5_32_Capital(System.String)">
+            <summary>
+            MD532位大写
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyGT.ToBase64(System.String)">
+            <summary>
+            Base64位加密
+            有必要可以自己实现加密方式
+            </summary>
+            <param name="Str">加密参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyGT.DecBase64(System.String)">
+            <summary>
+            Base64位解密
+            需要输入参数s为base-64编码格式解密失败将会为null
+            </summary>
+            <param name="Str">解密参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MySQLInitializeSys.SysAllInitialize">
+            <summary>
+            初始化整个后台
+            </summary>
+        </member>
+        <member name="M:GDataBase.MySQLInitializeSys.InitializeAuthority">
+            <summary>
+            初始化权限表
+            </summary>
+        </member>
+        <member name="M:GDataBase.MySQLInitializeSys.InitializeProcedure">
+            <summary>
+            初始化存储过程
+            </summary>
+        </member>
+        <member name="T:GDataBase.MyStatesGTL">
+            <summary>
+            静态方法类
+            </summary>
+        </member>
+        <member name="M:GDataBase.MyStatesGTL.GetEnumDisplayName(System.Enum)">
+            <summary>
+            获取Model Display的注释
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyStatesGTL.DrawImage(System.String,System.String,System.Single,GDataBase.GTEnum.ImagePosition,System.String,System.String)">
+            <summary>   
+            水印合成图片  
+            </summary>   
+            <param name="sourcePicture">源图片文件名</param>   
+            <param name="waterImage">水印图片文件名</param>   
+            <param name="alpha">透明度(0.1-1.0数值越小透明度越高)</param>   
+            <param name="position">位置</param>   
+            <param name="PicturePath" >图片的路径</param>
+            <param name="NewName" >图片文件</param>
+            <returns>返回生成于指定文件夹下的水印文件名</returns>   
+        </member>
+        <member name="M:GDataBase.MyStatesGTL.DrawWords(System.String,System.String,System.Single,GDataBase.GTEnum.ImagePosition,System.String)">
+            <summary>   
+            文字水印   
+            </summary>   
+            <param name="sourcePicture">源图片文件</param>   
+            <param name="waterWords">需要添加到图片上的文字</param>   
+            <param name="alpha">透明度</param>   
+            <param name="position">位置</param>   
+            <param name="PicturePath">文件路径</param>   
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyStatesGTL.CreateQRCode(System.String,System.String,System.String@)">
+            <summary>
+            创建并保存到本地
+            </summary>
+            <param name="content">二维码内容</param>
+            <param name="path">保存路径</param>
+            <param name="imagename">返回图片名</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyStatesGTL.CreateTempQRCode(System.String)">
+            <summary>
+            创建临时二维码画布
+            </summary>
+            <param name="content">二维码内容</param>
+            <returns></returns>        
+        </member>
+        <member name="M:GDataBase.MyStatesGTL.GetLocalLog(System.String)">
+            <summary>
+            获取本地图片
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyStatesGTL.CreateQRCodeWithLogo(System.String,System.String)">
+            <summary>
+            生成带logo二维码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyStatesGTL.CreateQRCodeWithLogo(System.String,System.Drawing.Bitmap)">
+            <summary>
+            生成带logo二维码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyStatesGTL.GetWebImg(System.String)">
+            <summary>
+            获取网络图片
+            </summary>
+            <param name="Image"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyStatesGTL.JsonToModel``1(System.String)">
+            <summary>
+            JSON转换成对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="json"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.MyStatesGTL.JsonToListModel``1(System.String)">
+            <summary>
+            JSON转换成对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="json"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GDataBase.SQLInitializeSys">
+            <summary>
+            SQL系统初始化
+            </summary>
+        </member>
+        <member name="M:GDataBase.SQLInitializeSys.InitializeAuthority">
+            <summary>
+            初始化权限表
+            </summary>
+        </member>
+        <member name="M:GDataBase.SQLInitializeSys.InitializeProcedure">
+            <summary>
+            初始化存储过程
+            </summary>
+        </member>
+        <member name="M:GDataBase.SQLiteBS.#ctor">
+            <summary>
+            方法重构
+            </summary>
+            <param name="connstring"></param>
+        </member>
+        <member name="M:GDataBase.SQLiteBS.#ctor(System.String)">
+            <summary>
+            方法重构
+            </summary>
+            <param name="connstring"></param>
+        </member>
+        <member name="M:GDataBase.SQLiteBS.BsExecute(System.String)">
+            <summary>
+            直接执行SQL语句
+            </summary>
+            <param name="safeSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteBS.BsExecute(System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            直接执行SQL语句
+            </summary>
+            <param name="sql"></param>
+            <param name="values"></param>
+            <returns></returns>  
+        </member>
+        <member name="M:GDataBase.SQLiteBS.BsMoreExecute(System.String,System.Int32)">
+            <summary>
+            事物执行多条SQL
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="RustltCount">返回的结果数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteBS.BsMoreExecute(System.String,System.Int32,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            事物执行多条SQL
+            </summary>
+            <param name="sql"></param>
+            <param name="RustltCount"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteBS.BsGetScalar(System.String)">
+            <summary>
+            返回第一行第一列
+            </summary>
+            <param name="safeSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteBS.BsGetScalar(System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            返回第一行第一列
+            </summary>
+            <param name="sql"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteBS.BsGetDataReader(System.String)">
+            <summary>
+            返回一行数据
+            </summary>
+            <param name="safeSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteBS.BsGetDataReader(System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            返回一行数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="values">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteBS.BsGetDataTable(System.String)">
+            <summary>
+            返回一个DataTable 
+            </summary>
+            <param name="safeSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteBS.BsGetDataTable(System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            返回一个DataTable 
+            </summary>
+            <param name="safeSql"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteBS.BsGetDataSet(System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            返回DataSet
+            </summary>
+            <param name="sql"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteBS.BsGetDataSet(System.String)">
+            <summary>
+            返回DataSet
+            </summary>
+            <param name="sql"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteBS.BsAddGetId(System.String)">
+            <summary>
+            新增一条记录返回Id
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteBS.BsAddGetId(System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            新增一条记录返回Id
+            </summary>
+            <param name="sql"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteBS.ExecuteStorage(System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            执行存储方法返回一个表
+            </summary>
+            <param name="storedName"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteBS.MoreExecuteStorage(System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            执行存储方法返回多个表
+            </summary>
+            <param name="storedName"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteBS.StringExecuteStorage(System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            返回一个值
+            </summary>
+            <param name="storedName"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.#ctor">
+            <summary>
+            方法重构
+            </summary>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.#ctor(System.String)">
+            <summary>
+            方法重构，连接名字
+            </summary>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.GetAddGetId(System.String,System.String,System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            新增一条记录返回Id
+            </summary>
+            <param name="filename">字段名</param>
+            <param name="valuestr">值</param>
+            <param name="tablename">表名</param>
+            <param name="cmdParms">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.GetAddGetId(System.String,System.String,System.String)">
+            <summary>
+            新增一条记录返回Id
+            </summary>
+            <param name="filename">字段名</param>
+            <param name="valuestr">值</param>
+            <param name="tablename">表名</param>        
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.Add(System.String,System.String,System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            插入一条记录
+            </summary>
+            <param name="filename">字段名</param>
+            <param name="valuestr">值</param>
+            <param name="tablename">表</param>
+            <param name="cmdParms">参数</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.Add(System.String,System.String,System.String)">
+            <summary>
+            插入一条记录
+            </summary>
+            <param name="filename">字段名</param>
+            <param name="valuestr">值</param>
+            <param name="tablename">表</param>
+            <param name="cmdParms">参数</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.MoreAdd(System.String,System.Collections.Generic.List{System.String},System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            插入多条数据
+            </summary>
+            <param name="filename">字段名</param>
+            <param name="valuestr">值的集合(),(),()</param>
+            <param name="tablename">表名</param>
+            <param name="cmdParms">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.MoreAdd(System.String,System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            插入多条数据
+            </summary>
+            <param name="filename">字段名</param>
+            <param name="valuestr">值的集合(),(),()</param>
+            <param name="tablename">表名</param>        
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.Update(System.String,System.String,System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            更新数据
+            </summary>
+            <param name="setcondition">更新的字段</param>
+            <param name="condition">条件</param>
+            <param name="tablename">表名</param>
+            <param name="cmdParms">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.Update(System.String,System.String,System.String)">
+            <summary>
+            更新数据
+            </summary>
+            <param name="setcondition">更新的字段</param>
+            <param name="condition">条件</param>
+            <param name="tablename">表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.Delete(System.String,System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            删除数据
+            </summary>
+            <param name="condition">条件</param>
+            <param name="tablename">表名</param>
+            <param name="cmdParms">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.Delete(System.String,System.String)">
+            <summary>
+            删除数据
+            </summary>
+            <param name="condition">条件</param>
+            <param name="tablename">表名</param>        
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.GetSingle(System.String,System.String,System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            返回第一行第一列
+            </summary>
+            <param name="GetColoum">返回的字段</param>
+            <param name="condition">条件</param>
+            <param name="tablename">表名</param>
+            <param name="cmdParms">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.GetSingle(System.String,System.String,System.String)">
+            <summary>
+            返回第一行第一列
+            </summary>
+            <param name="GetColoum">返回的字段</param>
+            <param name="condition">条件</param>
+            <param name="tablename">表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.Exists(System.String,System.String)">
+            <summary>
+            查询是否存在
+            </summary>
+            <param name="contion">条件</param>
+            <param name="tablename">表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.Exists(System.String,System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            查询是否存在
+            </summary>
+            <param name="contion">条件</param>
+            <param name="tablename">表名</param>
+            <param name="cmdParms">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.GetTable(System.String,System.String)">
+            <summary>
+            获取一个表
+            </summary>
+            <param name="contion">条件</param>
+            <param name="tablename">表名字</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.GetTable(System.String,System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            获取一个表
+            </summary>
+            <param name="contion">条件</param>
+            <param name="tablename">表名字</param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.GetDataSet(System.String,System.String)">
+            <summary>
+            获取多个表
+            </summary>
+            <param name="contion">条件</param>
+            <param name="tablename">表名字</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.GetDataSet(System.String,System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            获取多个表
+            </summary>
+            <param name="contion">条件</param>
+            <param name="tablename">表名字</param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.PagingList(System.Data.DataTable@,System.Int32@,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取分页列表
+            </summary>
+            <param name="DataSour">返回数据源</param>
+            <param name="RowCount">总数据量</param>
+            <param name="ThisPage">当前页</param>
+            <param name="PageSize">一页多少条数据</param>
+            <param name="sql1">数据源SQL</param>
+            <param name="sql2">总数据量SQL</param>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.ThisPagingList(System.Data.DataTable@,System.Int32@,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取分页列表
+            </summary>
+            <param name="DataSour">返回数据源</param>
+            <param name="RowCount">总数据量</param>
+            <param name="ThisPage">当前页</param>
+            <param name="PageSize">一页多少条数据</param>
+            <param name="Condition">条件</param>
+            <param name="tablename">表名</param>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.GetPagingData(System.Data.DataTable@,System.Int32@,System.String,System.Int32,System.String,System.Int32,System.String,System.String)">
+            <summary> 
+            获取分页数据(存储过程)
+            </summary>
+            <param name="dt">返回来的分页数据</param>
+            <param name="RowCount">返回来的行数</param>
+            <param name="ProcName">当前的页码数</param>
+            <param name="ThisPage">一页多少条数据</param>
+            <param name="TableName">表名</param>
+            <param name="PageSize">分页大小</param>
+            <param name="Condition">查询条件</param>
+            <param name="Sorting">排序</param>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.RecordLog(System.String,System.String,System.String)">
+            <summary>
+            记录操作日志
+            </summary>
+            <param name="ActEr">操作人</param>
+            <param name="Act">操作动作</param>
+            <param name="Log">日志内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.GTSearch``1(System.String)">
+            <summary>
+            泛型约束查询
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="sql">sql语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.GTSearch``1(System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            泛型约束查询
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.GTSearchList``1(System.String)">
+            <summary>
+            泛型函数集合
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.GTSearchList``1(System.String,System.Data.SQLite.SQLiteParameter[])">
+            <summary>
+            查询泛型集合
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="sql">sql语句</param>
+            <param name="par">集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLiteDBHeper.ToModel``1(System.Data.DataRow)">
+            <summary>
+            转化成Model
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="row"></param>
+            <returns></returns>
+        </member>
+        <member name="F:GDataBase.SQLServerBS.conn">
+            <summary> 
+            SqlConnection对象 
+            </summary>         
+        </member>
+        <member name="M:GDataBase.SQLServerBS.#ctor(System.String)">
+            <summary>
+            方法重构
+            </summary>
+            <param name="connstring"></param>
+        </member>
+        <member name="F:GDataBase.SQLServerBS.comm">
+            <summary> 
+            SqlCommand对象
+            </summary> 
+        </member>
+        <member name="M:GDataBase.SQLServerBS.ConnectionOpen">
+            <summary> 
+            打开数据库连接 
+            </summary> 
+        </member>
+        <member name="M:GDataBase.SQLServerBS.ConnectionClose">
+            <summary> 
+            关闭数据库连接 
+            </summary> 
+        </member>
+        <member name="M:GDataBase.SQLServerBS.ExecuteScalar(System.String)">
+            <summary>
+            查询是否存在记录
+            </summary>
+            <param name="sqlString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerBS.ExecuteScalar(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            查询是否存在记录
+            </summary>
+            <param name="sqlString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerBS.GetSingle(System.String)">
+            <summary>
+            查询是否存在记录
+            </summary>
+            <param name="sqlString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerBS.GetSingle(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            查询是否存在记录
+            </summary>
+            <param name="sqlString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerBS.ExecuteSQL(System.String)">
+            <summary> 
+            执行增删改
+            </summary> 
+            <param name="SqlString">要执行的SQL语句</param> 
+        </member>
+        <member name="M:GDataBase.SQLServerBS.ExecuteSQL(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            执行增删改
+            </summary> 
+            <param name="SqlString">要执行的SQL语句</param> 
+        </member>
+        <member name="M:GDataBase.SQLServerBS.GetRows(System.String)">
+            <summary>
+            查询一条数据
+            </summary>
+            <param name="SqlString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerBS.GetRows(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            查询一条数据
+            </summary>
+            <param name="SqlString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerBS.GetDataTable(System.String)">
+            <summary>
+            返回DataTable对象
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerBS.GetDataTable(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回DataTable对象
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerBS.GetBSDataSet(System.String)">
+            <summary>
+            返回DataTable对象
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerBS.GetBSDataSet(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回DataSet对象
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerBS.DataView(System.String)">
+            <summary>
+            返回DataView对象
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerBS.DataView(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回DataView对象
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerBS.DataReader(System.String)">
+            <summary>
+            返回dataReader对象
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerBS.Adapter(System.String,System.Data.DataSet)">
+            <summary>
+            批量添加
+            </summary>
+            <param name="sql"></param>
+            <param name="ds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerBS.UpdataAdapter(System.String,System.Data.DataSet)">
+            <summary>
+            批量修改
+            </summary>
+            <param name="sql"></param>
+            <param name="ds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerBS.MoreBsExecute(System.String)">
+            <summary>
+            事物执行多条SQL
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerBS.MoreBsExecute(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            事物执行多条SQL
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerBS.ExecuteStorage(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行存储方法返回一个表
+            </summary>
+            <param name="storedName"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerBS.MoreExecuteStorage(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行存储方法返回多个表
+            </summary>
+            <param name="storedName"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerBS.StringExecuteStorage(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回一个值
+            </summary>
+            <param name="storedName"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.GetAddGetId(System.String,System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            新增一条记录返回Id
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.GetAddGetId(System.String,System.String,System.String)">
+            <summary>
+            新增一条记录返回Id
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.Add(System.String,System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            插入一条记录
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.OutAddId(System.String,System.String,System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            添加数据返回自增ID
+            parameter[最后输出].Direction=ParameterDirection.Output；
+            </summary>
+            <param name="outName">返回的数据的字段名</param>
+            <param name="filename">添加的字段名字：字段1,字段2,字段3</param>
+            <param name="valuestr">添加的值：1,1,1,0</param>
+            <param name="tablename">表的名称</param>
+            <param name="cmdParms"></param>   
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.OutAddAnyColum(System.String,System.String,System.String,System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            添加一条数据返回任意字段数据
+            parameter[最后输出].Direction=ParameterDirection.Output；
+            </summary>
+            <param name="tableId">表格Id</param>
+            <param name="outName">返回的数据的字段名</param>
+            <param name="filename">添加的字段名字：字段1,字段2,字段3</param>
+            <param name="valuestr">添加的值：1,1,1,0</param>
+            <param name="tablename">表的名称</param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.Add(System.String,System.String,System.String)">
+            <summary>
+            插入一条记录
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.MoreAdd(System.String,System.Collections.Generic.List{System.String},System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            插入多条记录values (1,1,1,1),(2,2,2,2)
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.MoreAdd(System.String,System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            插入多条记录
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.MoreAdd(System.String,System.String[],System.String)">
+            <summary>
+            插入多条数据
+            </summary>
+            <param name="filename">字段名</param>
+            <param name="valuestr">值的集合(),(),()</param>
+            <param name="tablename">表名</param>        
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.MoreAdd(System.String,System.String,System.String)">
+            <summary>
+            插入多条数据
+            </summary>
+            <param name="filename">字段名</param>
+            <param name="valuestr">值的集合(),(),()</param>
+            <param name="tablename">表名</param>        
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.Update(System.String,System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            更新一条记录
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.Update(System.String,System.String,System.String)">
+            <summary>
+            更新一条记录
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.Delete(System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            删除一条记录
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.Delete(System.String,System.String)">
+            <summary>
+            删除一条记录
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.GetSingle(System.String,System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回第一行第一列
+            </summary>
+            <param name="GetColoum">获取的字段</param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.GetSingle(System.String,System.String,System.String)">
+            <summary>
+            返回第一行第一列
+            </summary>
+            <param name="GetColoum">获取的字段</param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.Exists(System.String,System.String)">
+            <summary>
+            判断是否存在
+            </summary>
+            <param name="contion"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.Exists(System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            判断是否存在
+            </summary>
+            <param name="contion"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.GetTable(System.String,System.String)">
+            <summary>
+            获取列表
+            </summary>
+            <param name="contion"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.GetTable(System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            获取列表
+            </summary>
+            <param name="contion"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.GetDataSet(System.String,System.String)">
+            <summary>
+            获得DataSet
+            </summary>
+            <param name="contion"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.GetPagingData(System.Data.DataTable@,System.Int32@,System.String)">
+            <summary>
+            获取分页数据
+            </summary>
+            <param name="dt"></param>
+            <param name="RowCount"></param>
+            <param name="Sqlstr"></param>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.GetPagingData(System.Data.DataTable@,System.Int32@,System.String,System.Int32,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            获取分页数据(存储过程)
+            </summary>
+            <param name="dt">返回来的分页数据</param>
+            <param name="RowCount">返回来的行数</param>
+            <param name="ThisPage">当前的页码数</param>
+            <param name="PageSize">一页多少条数据</param>
+            <param name="Condition">查询条件</param>
+            <param name="Sorting">排序</param>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.GetDataSet(System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            获得DataSet
+            </summary>
+            <param name="contion"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.GTSearch``1(System.String)">
+            <summary>
+            泛型约束查询
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="sql">sql语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.GTSearch``1(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            泛型约束查询
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.ToModel``1(System.Data.DataRow)">
+            <summary>
+            转化成Model
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="row"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.GTSearchList``1(System.String)">
+            <summary>
+            泛型函数集合
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerDBHeper.GTSearchList``1(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            查询泛型集合
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="sql">sql语句</param>
+            <param name="par">集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerIDataBase.GetAddGetId(System.String,System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            添加并返回Id
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerIDataBase.GetAddGetId(System.String,System.String,System.String)">
+            <summary>
+            添加并返回Id
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerIDataBase.Add(System.String,System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            添加
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerIDataBase.Add(System.String,System.String,System.String)">
+            <summary>
+            添加
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerIDataBase.MoreAdd(System.String,System.Collections.Generic.List{System.String},System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            添加多条
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerIDataBase.MoreAdd(System.String,System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            添加多条
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerIDataBase.Update(System.String,System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            更新
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerIDataBase.Update(System.String,System.String,System.String)">
+            <summary>
+            更新
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerIDataBase.Delete(System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            删除
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerIDataBase.Delete(System.String,System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerIDataBase.GetSingle(System.String,System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回一个值
+            </summary>
+            <param name="sql"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerIDataBase.GetSingle(System.String,System.String,System.String)">
+            <summary>
+            返回一个值
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerIDataBase.Exists(System.String,System.String)">
+            <summary>
+            数据是否存在
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerIDataBase.Exists(System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            数据是否存在
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerIDataBase.GetTable(System.String,System.String)">
+            <summary>
+            获取DataTable
+            </summary>
+            <param name="safeSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerIDataBase.GetTable(System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            获取DataTable
+            </summary>
+            <param name="safeSql"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.SQLServerIDataBase.GetDataSet(System.String,System.String)">
+            <summary>
+            获取DataSet
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>  
+        </member>
+        <member name="M:GDataBase.SQLServerIDataBase.GetDataSet(System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            获取DataSet
+            </summary>
+            <param name="sql"></param>
+            <param name="values"></param>
+            <returns></returns>  
+        </member>
+        <member name="P:GDataBase.WXInterface.BackPay">
+            <summary>
+            退款接口
+            </summary>
+        </member>
+        <member name="P:GDataBase.WXInterface.Pay">
+            <summary>
+            支付接口
+            </summary>
+        </member>
+        <member name="M:GDataBase.WXInterface.GetNonce_str">
+            <summary>
+            生成随机数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.WXInterface.WXMD5Util(System.String)">
+            <summary>
+            WxMD5生成算法
+            </summary>
+            <param name="r"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.WXInterface.GetPrepay_id``1(``0)">
+            <summary>
+            获取prepay_id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.WXInterface.GetXmlData(System.String)">
+            <summary>
+            解析xml 获取prepay_id
+            </summary>
+            <param name="xml"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GDataBase.WXInterface.ConvertDateTimeInt(System.DateTime)">
+            <summary>
+            DateTime时间格式转换为Unix时间戳格式
+            </summary>
+            <param name="time"> DateTime时间格式</param>
+            <returns>Unix时间戳格式</returns>
+        </member>
+        <member name="M:GDataBase.WXInterface.CreateSign(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            获取签名
+            </summary>
+            <param name="dic"></param>
+            <returns></returns>
+        </member>
+        <member name="P:GDataBase.ReturnGoodsModel.appid">
+            <summary>
+            appid
+            </summary>
+        </member>
+        <member name="P:GDataBase.ReturnGoodsModel.mch_id">
+            <summary>
+            商户号
+            </summary>
+        </member>
+        <member name="P:GDataBase.ReturnGoodsModel.device_info">
+            <summary>
+            设备号pc网页web
+            </summary>
+        </member>
+        <member name="P:GDataBase.ReturnGoodsModel.nonce_str">
+            <summary>
+            随机字符串
+            </summary>
+        </member>
+        <member name="P:GDataBase.ReturnGoodsModel.sign">
+            <summary>
+            签名
+            </summary>
+        </member>
+        <member name="P:GDataBase.ReturnGoodsModel.transaction_id">
+            <summary>
+            微信订单
+            </summary>
+        </member>
+        <member name="P:GDataBase.ReturnGoodsModel.out_trade_no">
+            <summary>
+            微信订单号
+            </summary>
+        </member>
+        <member name="P:GDataBase.ReturnGoodsModel.out_refund_no">
+            <summary>
+            商户退单号
+            </summary>
+        </member>
+        <member name="P:GDataBase.ReturnGoodsModel.total_fee">
+            <summary>
+            总金额
+            </summary>
+        </member>
+        <member name="P:GDataBase.ReturnGoodsModel.refund_fee">
+            <summary>
+            推客金额
+            </summary>
+        </member>
+        <member name="P:GDataBase.ReturnGoodsModel.refund_fee_type">
+            <summary>
+            货币种类
+            </summary>
+        </member>
+        <member name="P:GDataBase.ReturnGoodsModel.op_user_id">
+            <summary>
+            操作员
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.return_code">
+            <summary>
+            返回状态
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.return_msg">
+            <summary>
+            返回信息
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.result_code">
+            <summary>
+            业务结果
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.err_code">
+            <summary>
+            错误代码
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.err_code_des">
+            <summary>
+            错误代码描述
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.appid">
+            <summary>
+            公众账号ID
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.mch_id">
+            <summary>
+            商户号
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.device_info">
+            <summary>
+            设备号
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.nonce_str">
+            <summary>
+            随机字符串
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.sign">
+            <summary>
+            签名
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.transaction_id">
+            <summary>
+            微信订单号
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.out_trade_no">
+            <summary>
+            商户订单号
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.out_refund_no">
+            <summary>
+            商户退款单号
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.refund_id">
+            <summary>
+            微信退单号
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.refund_channel">
+            <summary>
+            退款渠道
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.refund_fee">
+            <summary>
+            退款金额
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.total_fee">
+            <summary>
+            订单总金额
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.fee_type">
+            <summary>
+            订单金额货币种
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.cash_fee">
+            <summary>
+            现金支付金额
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.cash_refund_fee">
+            <summary>
+            现金退款金额
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.coupon_refund_fee">
+            <summary>
+            代金券或立减优惠退款金额
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.coupon_refund_count">
+            <summary>
+            代金券或立减优惠使用数量
+            </summary>
+        </member>
+        <member name="P:GDataBase.BackReturnModel.coupon_refund_id">
+            <summary>
+            代金券或立减优惠ID
+            </summary>
+        </member>
+    </members>
+</doc>
