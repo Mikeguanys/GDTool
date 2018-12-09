@@ -1,0 +1,13 @@
+D:\MyProject\Other192\GDTool\代码生成器SQLlite版本\GDCodeTool\GDCreateTool\bin\Debug\GDCreateTool.exe.config
+D:\MyProject\Other192\GDTool\代码生成器SQLlite版本\GDCodeTool\GDCreateTool\bin\Debug\GDCreateTool.exe
+D:\MyProject\Other192\GDTool\代码生成器SQLlite版本\GDCodeTool\GDCreateTool\bin\Debug\GDCreateTool.pdb
+D:\MyProject\Other192\GDTool\代码生成器SQLlite版本\GDCodeTool\GDCreateTool\obj\Debug\GDCreateTool.csprojResolveAssemblyReference.cache
+D:\MyProject\Other192\GDTool\代码生成器SQLlite版本\GDCodeTool\GDCreateTool\obj\Debug\GDCreateTool.DataConnection.resources
+D:\MyProject\Other192\GDTool\代码生成器SQLlite版本\GDCodeTool\GDCreateTool\obj\Debug\GDCreateTool.MainWindow.resources
+D:\MyProject\Other192\GDTool\代码生成器SQLlite版本\GDCodeTool\GDCreateTool\obj\Debug\GDCreateTool.Properties.Resources.resources
+D:\MyProject\Other192\GDTool\代码生成器SQLlite版本\GDCodeTool\GDCreateTool\obj\Debug\GDCreateTool.csproj.GenerateResource.Cache
+D:\MyProject\Other192\GDTool\代码生成器SQLlite版本\GDCodeTool\GDCreateTool\obj\Debug\GDCreateTool.exe
+D:\MyProject\Other192\GDTool\代码生成器SQLlite版本\GDCodeTool\GDCreateTool\obj\Debug\GDCreateTool.pdb
+D:\myproject\Github\GDTool\GDCodeTool\GDCreateTool\bin\Debug\GDCreateTool.exe.config
+D:\myproject\Github\GDTool\GDCodeTool\GDCreateTool\obj\Debug\GDCreateTool.exe
+D:\myproject\Github\GDTool\GDCodeTool\GDCreateTool\obj\Debug\GDCreateTool.pdb

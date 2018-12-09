@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDataBase", "GDataBase\GDataBase.csproj", "{97C63A19-0004-485C-983F-9ACC471D4C42}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDUnitTest", "GDUnitTest\GDUnitTest.csproj", "{F82E2686-CF5C-43A1-BBAB-C8DD5459060C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDateBase2v", "GDateBase2v0\GDateBase2v.csproj", "{8C971246-7592-470B-834C-AD26EFF1F896}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDCreateTool", "..\GDCodeTool\GDCreateTool\GDCreateTool.csproj", "{2FC68166-C704-4F26-B851-7AED324F5C62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8C971246-7592-470B-834C-AD26EFF1F896}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C971246-7592-470B-834C-AD26EFF1F896}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C971246-7592-470B-834C-AD26EFF1F896}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FC68166-C704-4F26-B851-7AED324F5C62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FC68166-C704-4F26-B851-7AED324F5C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FC68166-C704-4F26-B851-7AED324F5C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FC68166-C704-4F26-B851-7AED324F5C62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
