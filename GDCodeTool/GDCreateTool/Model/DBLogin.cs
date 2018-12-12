@@ -1,35 +1,46 @@
-﻿namespace GDCreateTool.Model
+﻿using GDAttributes;
+using System;
+
+namespace GDCreateTool.Model
 {
     public class DBLogin
     {
-        public int Id { get; set; }
+        [GDColoum(QueryType = QueryType.Average, IsKey = true, Name = "Id", Length = 11)]
+        public Int64? Id { get; set; }
         /// <summary>
         /// 数据库类型
         /// </summary>
-        public int BaseName { get; set; }
+        [GDColoum(QueryType = QueryType.Average, Name = "BaseName", Length = 40)]
+        public string BaseName { get; set; }
         /// <summary>
         /// 数据库Id
         /// </summary>
-        public int Ip { get; set; }
+        [GDColoum(QueryType = QueryType.Average, Name = "Ip", Length = 20)]
+        public string Ip { get; set; }
         /// <summary>
         /// 端口
         /// </summary>
-        public int Port { get; set; }
+        [GDColoum(QueryType = QueryType.Average, Name = "Port", Length = 11)]
+        public string Port { get; set; }
         /// <summary>
         /// 数据库名称
         /// </summary>
-        public int DataName { get; set; }
+        [GDColoum(QueryType = QueryType.Average, Name = "DataName", Length = 50)]
+        public string DataName { get; set; }
         /// <summary>
         /// 用户名
         /// </summary>
-        public int UserName { get; set; }
+        [GDColoum(QueryType = QueryType.Average, Name = "UserName", Length = 16)]
+        public string UserName { get; set; }
         /// <summary>
         /// 账号
         /// </summary>
-        public int PassWord { get; set; }
+        [GDColoum(QueryType = QueryType.Average, Name = "PassWord", Length = 16)]
+        public string PassWord { get; set; }
         /// <summary>
         /// 是否连接
         /// </summary>
-        public int IsRead { get; set; }
+        [GDColoum(QueryType = QueryType.Average, Name = "IsRead", Length = 1)]
+        public Int64? IsRead { get; set; }
     }
 }

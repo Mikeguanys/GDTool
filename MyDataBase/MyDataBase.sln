@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDateBase2v", "GDateBase2v0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDCreateTool", "..\GDCodeTool\GDCreateTool\GDCreateTool.csproj", "{2FC68166-C704-4F26-B851-7AED324F5C62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsideComm", "..\..\..\C#\InsideStageTool\InsidePlatform\InsideComm\InsideComm.csproj", "{C4FBBAEF-5063-4925-9689-31D5F696FBF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2FC68166-C704-4F26-B851-7AED324F5C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FC68166-C704-4F26-B851-7AED324F5C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FC68166-C704-4F26-B851-7AED324F5C62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4FBBAEF-5063-4925-9689-31D5F696FBF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4FBBAEF-5063-4925-9689-31D5F696FBF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4FBBAEF-5063-4925-9689-31D5F696FBF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4FBBAEF-5063-4925-9689-31D5F696FBF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

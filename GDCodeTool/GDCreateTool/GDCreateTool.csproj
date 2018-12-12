@@ -37,6 +37,7 @@
       <HintPath>..\..\MyDataBase\packages\MyGTDLL\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SQLite">
       <HintPath>..\..\MyDataBase\packages\MyGTDLL\System.Data.SQLite.dll</HintPath>
@@ -52,6 +53,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comm\BsModel.cs" />
+    <Compile Include="Comm\Enum\EDType.cs" />
     <Compile Include="DataConnection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +68,7 @@
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\DBLogin.cs" />
+    <Compile Include="Model\Global\DataBaseList.cs" />
     <Compile Include="Model\Global\DBLogin.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -104,6 +108,10 @@
     <Content Include="Image\favicon-20180908113717507.ico" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\C#\InsideStageTool\InsidePlatform\InsideComm\InsideComm.csproj">
+      <Project>{c4fbbaef-5063-4925-9689-31d5f696fbf4}</Project>
+      <Name>InsideComm</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\MyDataBase\GDateBase2v0\GDateBase2v.csproj">
       <Project>{8c971246-7592-470b-834c-ad26eff1f896}</Project>
       <Name>GDateBase2v</Name>

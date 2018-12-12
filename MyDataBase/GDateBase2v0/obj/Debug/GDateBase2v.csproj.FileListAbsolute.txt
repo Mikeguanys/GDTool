@@ -22,3 +22,15 @@ D:\myproject\C#\InsideStageTool\GDTool\MyDataBase\GDateBase2v0\bin\Debug\GDAttri
 D:\myproject\C#\InsideStageTool\GDTool\MyDataBase\GDateBase2v0\obj\Debug\GDateBase2v.csprojResolveAssemblyReference.cache
 D:\myproject\C#\InsideStageTool\GDTool\MyDataBase\GDateBase2v0\obj\Debug\GDateBase2v.dll
 D:\myproject\C#\InsideStageTool\GDTool\MyDataBase\GDateBase2v0\obj\Debug\GDateBase2v.pdb
+D:\myproject\Github\GDTool\MyDataBase\GDateBase2v0\bin\Debug\GDateBase2v.dll
+D:\myproject\Github\GDTool\MyDataBase\GDateBase2v0\bin\Debug\GDateBase2v.pdb
+D:\myproject\Github\GDTool\MyDataBase\GDateBase2v0\bin\Debug\GDAttributes.dll
+D:\myproject\Github\GDTool\MyDataBase\GDateBase2v0\bin\Debug\MySql.Data.dll
+D:\myproject\Github\GDTool\MyDataBase\GDateBase2v0\bin\Debug\ServiceStack.Redis.dll
+D:\myproject\Github\GDTool\MyDataBase\GDateBase2v0\bin\Debug\System.Data.SQLite.dll
+D:\myproject\Github\GDTool\MyDataBase\GDateBase2v0\bin\Debug\ServiceStack.Interfaces.dll
+D:\myproject\Github\GDTool\MyDataBase\GDateBase2v0\bin\Debug\ServiceStack.Text.dll
+D:\myproject\Github\GDTool\MyDataBase\GDateBase2v0\bin\Debug\GDAttributes.pdb
+D:\myproject\Github\GDTool\MyDataBase\GDateBase2v0\obj\Debug\GDateBase2v.csprojResolveAssemblyReference.cache
+D:\myproject\Github\GDTool\MyDataBase\GDateBase2v0\obj\Debug\GDateBase2v.dll
+D:\myproject\Github\GDTool\MyDataBase\GDateBase2v0\obj\Debug\GDateBase2v.pdb

@@ -12,7 +12,7 @@
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
-        {
+         {
             if (disposing && (components != null))
             {
                 components.Dispose();
@@ -55,6 +55,7 @@
             this.SelIp.Name = "SelIp";
             this.SelIp.Size = new System.Drawing.Size(141, 22);
             this.SelIp.TabIndex = 31;
+            this.SelIp.SelectedIndexChanged += new System.EventHandler(this.SelIp_SelectedIndexChanged);
             // 
             // SelDataType
             // 
@@ -64,6 +65,7 @@
             this.SelDataType.Name = "SelDataType";
             this.SelDataType.Size = new System.Drawing.Size(253, 22);
             this.SelDataType.TabIndex = 30;
+            this.SelDataType.SelectedIndexChanged += new System.EventHandler(this.SelDataType_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -163,7 +165,6 @@
             this.txtPort.Name = "txtPort";
             this.txtPort.Size = new System.Drawing.Size(57, 23);
             this.txtPort.TabIndex = 32;
-            this.txtPort.Text = "3306";
             // 
             // label5
             // 
@@ -248,7 +249,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "DataConnection";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -14,7 +14,7 @@ namespace GDateBase2v.SQLite
 {
     class SQLiteBSHelper : SQLiteBasis, SQLGDMethodInterface
     {
-        private const SQLEnum.DataBaseType BaseType = SQLEnum.DataBaseType.SqlServer;
+        private const SQLEnum.DataBaseType BaseType = SQLEnum.DataBaseType.Sqlite;
         /// <summary>
         /// 
         /// </summary>
@@ -104,7 +104,7 @@ namespace GDateBase2v.SQLite
             Where = string.IsNullOrEmpty(Where) ? "" : (" and " + Where);
             SQLPropertyInfo PropertyInfos = new SQLPropertyInfo();
             List<GDModel.SQLModel> ListParameter = PropertyInfos.GDGetPropertys(Model, BaseType);
-            var GetColum = ListParameter.Where(w => !w.IsKey).Select(s => new { Field = (s.Field + "=" + s.ParameterName), Parameter = s.Parameter }).ToList();
+            var GetColum = ListParameter.Where(w => !w.IsKey).Select(s => new { Field = (s.Field + "=" + s.ParameterName), Parameter = s.Parameter }).ToList();            
             return BsExecute($"UPDATE {typeof(T).Name} SET {string.Join(",", GetColum.Select(s => s.Field).ToList())} where 1=1 {Where}", GetColum.Select(s => s.Parameter as SQLiteParameter).ToArray());
         }
         /// <summary>

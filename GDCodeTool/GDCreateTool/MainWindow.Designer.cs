@@ -44,7 +44,7 @@
             this.功能ToolStripMenuItem});
             this.Menu.Location = new System.Drawing.Point(0, 0);
             this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(1238, 25);
+            this.Menu.Size = new System.Drawing.Size(1171, 25);
             this.Menu.TabIndex = 13;
             this.Menu.Text = "menuStrip1";
             // 
@@ -60,13 +60,13 @@
             // ToolStripMenuItem
             // 
             this.ToolStripMenuItem.Name = "ToolStripMenuItem";
-            this.ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.ToolStripMenuItem.Text = "项目创建";
             // 
             // ChangeTo
             // 
             this.ChangeTo.Name = "ChangeTo";
-            this.ChangeTo.Size = new System.Drawing.Size(152, 22);
+            this.ChangeTo.Size = new System.Drawing.Size(124, 22);
             this.ChangeTo.Text = "反转";
             // 
             // MainWindow
@@ -75,7 +75,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1238, 802);
+            this.ClientSize = new System.Drawing.Size(1171, 550);
             this.Controls.Add(this.Menu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimizeBox = false;
