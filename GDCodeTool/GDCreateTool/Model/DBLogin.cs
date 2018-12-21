@@ -42,5 +42,10 @@ namespace GDCreateTool.Model
         /// </summary>
         [GDColoum(QueryType = QueryType.Average, Name = "IsRead", Length = 1)]
         public Int64? IsRead { get; set; }
+        /// <summary>
+        /// 数据库连接字符串
+        /// </summary>
+        [GDColoum(QueryType = QueryType.Average, Name = "ConnectStr", Length = 1)]
+        public string ConnectStr { get; set; }
     }
 }

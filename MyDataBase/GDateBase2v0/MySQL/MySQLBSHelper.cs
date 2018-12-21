@@ -12,7 +12,7 @@ using System.Reflection;
 
 namespace GDateBase2v.MySQL
 {
-    class MySQLBSHelper : MySQLBasis, SQLGDMethodInterface
+    public class MySQLBSHelper : MySQLBasis, SQLGDMethodInterface
     {
         private const SQLEnum.DataBaseType BaseType = SQLEnum.DataBaseType.MySql;
         /// <summary>

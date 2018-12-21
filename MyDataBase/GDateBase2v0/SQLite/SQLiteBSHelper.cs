@@ -12,7 +12,7 @@ using System.Reflection;
 
 namespace GDateBase2v.SQLite
 {
-    class SQLiteBSHelper : SQLiteBasis, SQLGDMethodInterface
+    public class SQLiteBSHelper : SQLiteBasis, SQLGDMethodInterface
     {
         private const SQLEnum.DataBaseType BaseType = SQLEnum.DataBaseType.Sqlite;
         /// <summary>

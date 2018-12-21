@@ -13,6 +13,5 @@ D:\myproject\C#\InsideStageTool\MyDataBase\GDAttributes\obj\Debug\GDAttributes.d
 D:\myproject\C#\InsideStageTool\MyDataBase\GDAttributes\obj\Debug\GDAttributes.pdb
 D:\myproject\Github\GDTool\MyDataBase\GDAttributes\bin\Debug\GDAttributes.dll
 D:\myproject\Github\GDTool\MyDataBase\GDAttributes\bin\Debug\GDAttributes.pdb
-D:\myproject\Github\GDTool\MyDataBase\GDAttributes\obj\Debug\GDAttributes.csprojResolveAssemblyReference.cache
 D:\myproject\Github\GDTool\MyDataBase\GDAttributes\obj\Debug\GDAttributes.dll
 D:\myproject\Github\GDTool\MyDataBase\GDAttributes\obj\Debug\GDAttributes.pdb

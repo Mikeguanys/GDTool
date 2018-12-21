@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Image\favicon-20180908113717507.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="MySql.Data">
       <HintPath>..\..\MyDataBase\packages\MyGTDLL\MySql.Data.dll</HintPath>
@@ -42,6 +45,7 @@
     <Reference Include="System.Data.SQLite">
       <HintPath>..\..\MyDataBase\packages\MyGTDLL\System.Data.SQLite.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,6 +59,9 @@
   <ItemGroup>
     <Compile Include="Comm\BsModel.cs" />
     <Compile Include="Comm\Enum\EDType.cs" />
+    <Compile Include="Comm\Enum\ModelType.cs" />
+    <Compile Include="Comm\FormComm.cs" />
+    <Compile Include="Comm\PComm.cs" />
     <Compile Include="DataConnection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +74,7 @@
     <Compile Include="MainWindow.Designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\BaseTable.cs" />
     <Compile Include="Model\DBLogin.cs" />
     <Compile Include="Model\Global\DataBaseList.cs" />
     <Compile Include="Model\Global\DBLogin.cs" />

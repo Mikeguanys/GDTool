@@ -10,37 +10,43 @@ using System.Data.SqlClient;
 using System.Data;
 using MySql.Data.MySqlClient;
 using System.Data.SQLite;
+using GDCreateTool.Comm;
 
 namespace GDCreateTool
 {
     public partial class DataConnection : Form
     {
         public static List<DBLogin> ListModel = new List<DBLogin>();
-        private string ConnectionStr = null;
+        public static string ConnectionStr = null;
+        public static DBLogin DBInfo;
         public DataConnection()
         {
+            FormComm FCom = new FormComm(this);
             InitializeComponent();
         }
 
         private void btnTestConn_Click(object sender, EventArgs e)
         {
-
             this.Enabled = false;
             Connection();
             this.Enabled = true;
-
         }
 
         private void btnConnection_Click(object sender, EventArgs e)
         {
-
             this.Enabled = false;
             if (Connection(false))
             {
-                new MainWindow().ShowDialog();
+                if (PComm.ConnectionName.ModifyConnectStr(ConnectionStr))
+                {
+                    new MainWindow().ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("修改配置失败。");
+                }                
             }
             this.Enabled = true;
-
         }
 
         private bool VerData()
@@ -77,6 +83,7 @@ namespace GDCreateTool
         }
         private void DataConnection_Load(object sender, EventArgs e)
         {
+            string a = System.IO.Directory.GetCurrentDirectory();
             try
             {
                 ListModel = new DBLogin().GDList(null);
@@ -86,7 +93,7 @@ namespace GDCreateTool
                     SelDataType.SelectedIndexChanged -= new EventHandler(SelDataType_SelectedIndexChanged);
                     SelDataType.DataSource = db;
                     var IsReadModel = ListModel.Where(w => w.IsRead == 1);
-                    if (IsReadModel.Count()==0)
+                    if (IsReadModel.Count() == 0)
                     {
                         var rs = ListModel.First();
                         BindData(rs);
@@ -205,7 +212,7 @@ namespace GDCreateTool
                 //判断是否为测试连接
                 if (!IsTest)
                 {
-                    UpdateConnection();
+                    UpdateConnection(ConnectionStr);
                 }
             }
             catch (Exception ex)
@@ -227,7 +234,7 @@ namespace GDCreateTool
         /// 修改记录连接
         /// </summary>
         /// <returns></returns>
-        private bool UpdateConnection()
+        private bool UpdateConnection(string ConnectStr)
         {
             if (ckbRember.Checked)
             {
@@ -238,6 +245,7 @@ namespace GDCreateTool
             string DataName = txtDataBaseName.Text;
             string UserName = txtUserName.Text;
             string Port = txtPort.Text;
+            string ConnStr = ConnectionStr;
             int IsRead = (ckbRember.Checked ? 1 : 0);
             int Id = Convert.ToInt32(SelIp.SelectedValue.ToString() == "" ? "0" : SelIp.SelectedValue.ToString());
             int c = new DBLogin().GDList(w => w.BaseName == DataBaseType && w.Ip == Ip && w.Port == Port && w.DataName == DataName && w.UserName == UserName).Count();
@@ -249,8 +257,11 @@ namespace GDCreateTool
                 DataName = DataName,
                 IsRead = IsRead,
                 PassWord = txtPassword.Text,
-                UserName = txtUserName.Text
+                UserName = txtUserName.Text,
+                ConnectStr = ConnStr
             };
+            //给连接的公共属性赋值
+            DBInfo = dbModel;
             if (c > 0)
             {
                 return dbModel.GDUpdate(w => w.Id == Id);
